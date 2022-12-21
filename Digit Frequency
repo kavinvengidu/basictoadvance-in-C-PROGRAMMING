@@ -1,0 +1,21 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+    char s[1001];
+    scanf("%s",s);
+    int count=0;
+    int n=strlen(s);
+    for(char i=48;i<58;i++){
+        count=0;
+        for(int j=0;j<n;j++){
+            if(s[j]==i){
+                count++;
+            }
+        }
+        printf("%d ",count);
+    }
+    return 0;
+}
